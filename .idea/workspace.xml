@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="025d3ab6-56f2-4f09-8cd2-7d616ec0fef0" name="Changes" comment="share">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/drivers/DriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/drivers/DriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/library/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/library/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/library/ReusableUIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/library/ReusableUIMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/pages/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/pages/CreateAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/pages/UserLoggedInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/pages/UserLoggedInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/CreateAccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/CreateAccountSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/MainSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/MainSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/UserLoggedInSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/UserLoggedInSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/drivers/DriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/drivers/DriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/library/ReusableUIMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/library/ReusableUIMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/pages/CreateAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/pages/CreateAccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/pages/UserLoggedInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/pages/UserLoggedInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/CreateAccountSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/CreateAccountSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/MainSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/MainSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/UserLoggedInSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/UserLoggedInSteps.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MuhammadAmmarSattar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Iqra92/codechallenge.git",
+    "accountId": "a4014c7a-5ff1-4363-89d6-434f7d479623"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2utzP95S91XyNdLHJ5FNY5aHzz3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: createAccount.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: e2e.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: main.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: userLoggedIn.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Create an account by resolving step-by-step validation errors.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with empty fields.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Successful login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: User logs in with valid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: User successfully creates an account.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: User tries to create an account with an already registered email.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: User tries to create an account with an invalid email.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.RunCucumberTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RunCucumberTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RunCucumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/muhammadammar/Downloads/qacodechallenge/src/test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src/test/java/base/steps/android/login" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+      <recent name="$PROJECT_DIR$/src/test/resources/apps" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="base" />
+      <recent name="base.steps.android.login" />
+      <recent name="base.core" />
+      <recent name="base.core.pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: userLoggedIn">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="1a1bcb26-5d03-477e-8cc0-13cff0547f79" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: e2e" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/e2e.feature" />
+      <option name="GLUE" value="base.hooks base.steps.android.login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AndriodTest" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: e2e" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: userLoggedIn" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/userLoggedIn.feature" />
+      <option name="GLUE" value="base.hooks base.steps.android.login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AndriodTest" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: userLoggedIn" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User successfully creates an account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/createAccount.feature" />
+      <option name="GLUE" value="base.hooks base.steps.android.login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AndriodTest" />
+      <option name="NAME_FILTER" value="^User successfully creates an account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User successfully creates an account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User successfully creates an account" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCucumberTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AndriodTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.steps.android.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base.steps.android.login" />
+      <option name="MAIN_CLASS_NAME" value="base.steps.android.login.RunCucumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AndriodTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.RunCucumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: userLoggedIn" />
+        <item itemvalue="Cucumber Java.Feature: e2e" />
+        <item itemvalue="JUnit.RunCucumberTest" />
+        <item itemvalue="Cucumber Java.Scenario: User successfully creates an account" />
+        <item itemvalue="JUnit.RunCucumberTest (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="025d3ab6-56f2-4f09-8cd2-7d616ec0fef0" name="Changes" comment="" />
+      <created>1743082631741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743082631741</updated>
+    </task>
+    <task id="LOCAL-00001" summary="share">
+      <option name="closed" value="true" />
+      <created>1743372694474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743372694474</updated>
+    </task>
+    <task id="LOCAL-00002" summary="share">
+      <option name="closed" value="true" />
+      <created>1743466239097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743466239097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="share" />
+    <option name="LAST_COMMIT_MESSAGE" value="share" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: base.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.344 s <<< FAILURE! - in base.RunCucumberTest
+User successfully creates an account then login and verify the user loggedIn details(End to End Functionality - Happy Flow)  Time elapsed: 0.059 s  <<< ERROR!
+java.lang.NullPointerException: The provided search context cannot be null
+
