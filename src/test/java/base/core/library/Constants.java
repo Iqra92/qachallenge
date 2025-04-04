@@ -11,7 +11,7 @@ public class Constants {
     }
 
     public static final class Apps {
-        public static final String ANDROID = "/Users/iqramanoor/Downloads/qacodechallenge/src/test/resources/apps/app-debug.apk";
+        public static final String ANDROID = "/Users/muhammadammar/Downloads/qacodechallenge/src/test/resources/apps/app-debug.apk";
     }
 
 }

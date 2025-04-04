@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="025d3ab6-56f2-4f09-8cd2-7d616ec0fef0" name="Changes" comment="share">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/drivers/DriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/drivers/DriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/core/library/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/library/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/library/ReusableUIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/library/ReusableUIMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/pages/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/pages/CreateAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/core/pages/UserLoggedInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/core/pages/UserLoggedInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/CreateAccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/CreateAccountSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/MainSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/MainSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/steps/android/login/UserLoggedInSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/steps/android/login/UserLoggedInSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/drivers/DriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/drivers/DriverProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/library/ReusableUIMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/library/ReusableUIMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/pages/CreateAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/pages/CreateAccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/core/pages/UserLoggedInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/core/pages/UserLoggedInPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/CreateAccountSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/CreateAccountSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/MainSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/MainSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/UserLoggedInSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/steps/android/login/UserLoggedInSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +31,12 @@
     &quot;assignee&quot;: &quot;MuhammadAmmarSattar&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Iqra92/codechallenge.git",
-    "accountId": "a4014c7a-5ff1-4363-89d6-434f7d479623"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Iqra92/qachallenge.git&quot;,
+    &quot;accountId&quot;: &quot;a4014c7a-5ff1-4363-89d6-434f7d479623&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -69,35 +48,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: createAccount.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: e2e.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: login.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: userLoggedIn.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Create an account by resolving step-by-step validation errors.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Login with empty fields.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successful login.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User logs in with valid credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User successfully creates an account.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User tries to create an account with an already registered email.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User tries to create an account with an invalid email.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.RunCucumberTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RunCucumberTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RunCucumberTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/muhammadammar/Downloads/qacodechallenge/src/test&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: createAccount.executor": "Run",
+    "Cucumber Java.Feature: e2e.executor": "Run",
+    "Cucumber Java.Feature: login.executor": "Run",
+    "Cucumber Java.Feature: main.executor": "Run",
+    "Cucumber Java.Feature: userLoggedIn.executor": "Run",
+    "Cucumber Java.Scenario: Create an account by resolving step-by-step validation errors.executor": "Run",
+    "Cucumber Java.Scenario: Login with empty fields.executor": "Run",
+    "Cucumber Java.Scenario: Successful login.executor": "Run",
+    "Cucumber Java.Scenario: User logs in with valid credentials.executor": "Run",
+    "Cucumber Java.Scenario: User successfully creates an account.executor": "Run",
+    "Cucumber Java.Scenario: User tries to create an account with an already registered email.executor": "Run",
+    "Cucumber Java.Scenario: User tries to create an account with an invalid email.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.RunCucumberTest (1).executor": "Run",
+    "JUnit.RunCucumberTest (2).executor": "Run",
+    "JUnit.RunCucumberTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/muhammadammar/Downloads/qacodechallenge",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
@@ -113,7 +92,7 @@
       <recent name="base.core.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: userLoggedIn">
+  <component name="RunManager" selected="Cucumber Java.Feature: e2e">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
