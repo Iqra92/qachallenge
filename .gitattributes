@@ -1,3 +1,6 @@
 *.java linguist-language=Java
+*.xml linguist-language=Gherkin
+*.xml linguist-language=XML
+
 
 
