@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
         },
         monochrome = true,
-        tags = "@happy"
+        tags = "@regression"
 )
 public class RunCucumberTest {
 }

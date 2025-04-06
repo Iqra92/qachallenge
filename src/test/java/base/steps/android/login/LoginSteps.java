@@ -1,47 +1,32 @@
 package base.steps.android.login;
 
 import base.core.library.ReusableUIMethods;
-import base.core.library.TestContext;
 import base.core.pages.LoginPage;
-import base.core.pages.CreateAccountPage;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static base.core.library.TestContext.getRegisteredEmail;
+import static org.junit.Assert.*;
 
 public class LoginSteps {
 
     private final LoginPage loginPage;
-    private final CreateAccountPage createAccountPage;
-    private static String registeredEmail;
-    private final TestContext context;
 
-    public LoginSteps(TestContext context) {
+    public LoginSteps() {
         loginPage = new LoginPage();
-        createAccountPage = new CreateAccountPage();
-        this.context = context;
     }
 
     @When("the user is navigate to login page")
     public void the_user_is_navigate_to_login_page() {
         loginPage.clickLoginButton();
         assertTrue(loginPage.isLoginPageDisplayed());
-    }
-
-    @Given("the user has a registered account")
-    public void the_user_has_a_registered_account() {
-        if (registeredEmail == null) {
-            registeredEmail = ReusableUIMethods.generateUniqueEmail();
-            createAccountPage.createAccount("John", "Doe", registeredEmail, "Secure@123");
-            assertTrue("Account creation failed!", createAccountPage.isRegistrationSuccessful());
-        }
+        System.out.println("User is on the Login Page");
     }
 
     @When("the user enters the registered email")
     public void the_user_enters_the_registered_email() {
-        loginPage.enterEmail(context.getRegisteredEmail());
+        System.out.println("Check Registered Email =>: "+getRegisteredEmail());
+        loginPage.enterEmail(getRegisteredEmail());
     }
 
     @When("the user enters the valid password {string}")
@@ -56,12 +41,34 @@ public class LoginSteps {
 
     @Then("the user should be successfully logged in")
     public void the_user_should_be_successfully_logged_in() {
-        assertTrue("Login failed!", loginPage.isUserLoggedIn());
+        assertTrue("Login Successfully!", loginPage.isUserLoggedIn());
+        System.out.println("User is Successfully loggedIn");
     }
 
-    @When("the user clicks the login button without entering credentials")
-    public void the_user_clicks_login_button_without_entering_credentials() {
+    @When("the user attempts to login with empty fields")
+    public void the_user_attempts_to_login_with_empty_fields() {
         loginPage.clickLoginButton();
+        loginPage.clickUserName();
+        boolean isEmailErrorDisplayed = loginPage.isInvalidEmailMessageDisplayed();
+        assertTrue("Expected error message for empty email address.", isEmailErrorDisplayed);
+        loginPage.enterEmail(getRegisteredEmail());
+        loginPage.clickLoginButton();
+        boolean isPasswordErrorDisplayed = loginPage.isInvalidPasswordMessageDisplayed();
+        assertTrue("Expected error message for empty password.", isPasswordErrorDisplayed);
+    }
+
+    @When("the user attempts to login with invalid credentials")
+    public void the_user_attempts_to_login_with_Invalid_fields() {
+        loginPage.clickLoginButton();
+        loginPage.clickUserName();
+        loginPage.enterEmail("Invalid@gmail.com");
+        boolean isEmailErrorDisplayed = loginPage.isInvalidEmailMessageDisplayed();
+        assertTrue("Expected error message for email is not registered.", isEmailErrorDisplayed);
+        loginPage.enterEmail(getRegisteredEmail());
+        loginPage.clickLoginButton();
+        loginPage.clickPassword();
+        boolean isPasswordErrorDisplayed = loginPage.isInvalidPasswordMessageDisplayed();
+        assertTrue("Expected error message for password is not registered.", isPasswordErrorDisplayed);
     }
 
     @Then("an error message {string} should be displayed")
@@ -82,14 +89,46 @@ public class LoginSteps {
         assertEquals("Error message mismatch!", expectedErrorMessage, actualErrorMessage);
     }
 
-    @When("the user enters {string} as email")
-    public void the_user_enters_email(String email) {
-        loginPage.enterEmail(email);
+    @When("the user enters registered email")
+    public void the_user_enters_registered_email() {
+        loginPage.enterEmail(getRegisteredEmail());
+        loginPage.clickLoginButton();
+        boolean isPasswordErrorDisplayed = loginPage.isInvalidPasswordMessageDisplayed();
+        assertTrue("Expected error message for password is not registered.", isPasswordErrorDisplayed);
+
     }
 
-    @When("the user enters {string} as password")
-    public void the_user_enters_password(String password) {
-        loginPage.enterPassword(password);
+    @When("the user enters valid password")
+    public void the_user_enters_valid_password() {
+        loginPage.clickUserName();
+        loginPage.clearEmailFieldText();
+        loginPage.enterPassword("Secure@123");
+        loginPage.clickLoginButton();
+        boolean isEmailErrorDisplayed = loginPage.isInvalidEmailMessageDisplayed();
+        assertTrue("Expected error message for email is not registered.", isEmailErrorDisplayed);
+
+    }
+
+    @When("the user enters incorrect password")
+    public void the_user_enters_Incorrect_password() {
+        loginPage.clickPassword();
+        loginPage.clearPasswordFieldText();
+        loginPage.enterEmail(getRegisteredEmail());
+        loginPage.clickLoginButton();
+        loginPage.enterPassword("IncorrectPassword");
+        loginPage.clickLoginButton();
+        boolean isPasswordErrorDisplayed = loginPage.isInvalidPasswordMessageDisplayed();
+        assertTrue("Expected error message for password is not registered.", isPasswordErrorDisplayed);
+
+    }
+
+    @When("the user enters Invalid email format")
+    public void the_user_enters_Invalid_email_format() {
+        loginPage.enterEmail("invalid.com");
+        loginPage.clickLoginButton();
+        boolean isEmailErrorDisplayed = loginPage.isInvalidEmailMessageDisplayed();
+        assertTrue("Expected error message for email is not valid.", isEmailErrorDisplayed);
+
     }
 
     @When("the user leaves the password field empty")
@@ -101,4 +140,10 @@ public class LoginSteps {
     public void the_user_leaves_the_email_field_empty() {
         loginPage.enterEmail("");
     }
+
+    @When("the user presses the Android back button")
+    public void the_user_presses_back_button() {
+        ReusableUIMethods.pressAndroidBackButton();
+    }
+
 }

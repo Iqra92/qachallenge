@@ -14,7 +14,7 @@ import java.time.Duration;
 
 public class DriverProvider {
     private static DriverProvider instance;
-    private static AppiumDriver driver;
+    public static AppiumDriver driver;
     PropertyLoader props = ReusableMethods.getProperties();
 
 
@@ -30,13 +30,10 @@ public class DriverProvider {
     public AppiumDriver getDriver() {
         if (driver == null) {
             initializeDriver();
-        }
-        if (driver == null) {
-            throw new IllegalStateException("Driver is not initialized properly!");
+            DriverManager.setDriver(driver);
         }
         return driver;
     }
-
 
     private void initializeDriver() {
         try {
@@ -58,6 +55,8 @@ public class DriverProvider {
     }
 
 
+
+
     private void initializeAndroidDriver() throws MalformedURLException {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
@@ -67,15 +66,23 @@ public class DriverProvider {
         options.setAutoGrantPermissions(true);
         options.setDeviceName("R58N61NX8PT");
         options.setAppWaitDuration(Duration.ofSeconds(60));
-        options.setAutoGrantPermissions(true);
+        options.fullReset();
+        options.autoGrantPermissions();
         options.setAppActivity("com.hostelworld.qacodechallenge.MainActivity");
         options.setAppPackage("com.hostelworld.qacodechallenge");
+        options.setCapability("disablePasswordGeneration", true);
+        options.setCapability("hideKeyboard", true);
+        options.setCapability("ignoreUnimportantViews", true);
+        options.setCapability("disableWindowAnimation",true);
+        options.setCapability("ensureWebviewsHavePages",true);
+        options.setCapability("ignoreHiddenApiPolicyError",true);
+        options.setCapability("disableAndroidAutofill", true);
 
         options.setAppWaitDuration(Duration.ofSeconds(60));
 
-
         URL url = new URL("http://127.0.0.1:4723/");
         driver = new AndroidDriver(url, options);
+
     }
 
     private void initializeIosDriver() throws MalformedURLException {

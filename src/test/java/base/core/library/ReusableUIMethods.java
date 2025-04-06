@@ -1,8 +1,12 @@
 package base.core.library;
 
+import base.core.drivers.DriverManager;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,10 +24,6 @@ public class ReusableUIMethods {
         this.driver = driver;
     }
 
-    public void longPressAction(WebElement ele) {
-        ((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
-                ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "duration", 2000));
-    }
 
     public void scrollToText(String text) {
         driver.findElement(AppiumBy
@@ -76,6 +76,26 @@ public class ReusableUIMethods {
         return isAvailable;
     }
 
+    public void disbaledSavePassword(){
+        try {
+
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement savePasswordButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//android.widget.Button[@resource-id=\"android:id/autofill_dialog_no\"]")));
+
+            savePasswordButton.click();
+            System.out.println("Clicked 'no thanks' button on Google Password popup");
+
+        } catch (Exception e) {
+            System.out.println("Google Password popup not found or other issue: " + e.getMessage());
+        }
+    }
+
+    public static void pressAndroidBackButton() {
+        AndroidDriver driver = (AndroidDriver) DriverManager.getDriver();
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+    }
+
     public boolean waitForWebElementToBeAvailable(WebElement element, int seconds) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
@@ -91,5 +111,7 @@ public class ReusableUIMethods {
         driver.manage().timeouts().implicitlyWait(Constants.DEFAULT_TIMEOUT);
         return isAvailable;
     }
+
+
 
 }

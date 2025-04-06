@@ -1,16 +1,17 @@
 package base.core.library;
 
 public class TestContext {
-    private String registeredEmail;
+
+    private static String registeredEmail;
 
 
-    public void setRegisteredEmail(String email) {
-        this.registeredEmail = email;
+    public static void setRegisteredEmail(String email) {
+        registeredEmail = email;
     }
 
-    public String getRegisteredEmail() {
+    public static String getRegisteredEmail() {
         return registeredEmail;
     }
 
-
 }
+

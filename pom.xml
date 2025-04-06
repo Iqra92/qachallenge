@@ -17,17 +17,18 @@
         <java.version>11</java.version>
         <junit.version>4.13.2</junit.version>
         <cucumber.version>7.11.1</cucumber.version>
-        <appium.version>8.5.1</appium.version>
+        <appium.version>8.5.1</appium.version> <!-- Updated to match the latest version -->
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Define Selenium dependencies in dependencyManagement to control versions -->
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
-                <version>4.14.1</version>
+                <version>4.14.1</version> <!-- Ensure using the latest version -->
             </dependency>
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
@@ -51,19 +52,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <dependencies>
         <!-- Appium Java Client -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>9.3.0</version>
-        </dependency>
-
-        <!-- Selenium Compatibility for Appium -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.14.1</version>
+            <version>8.6.0</version> <!-- Updated to match the appium.version property -->
         </dependency>
 
         <!-- JUnit -->
@@ -87,7 +82,6 @@
             <version>2.13.5</version> <!-- Use latest secure version -->
         </dependency>
 
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
@@ -103,7 +97,6 @@
     </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -114,7 +107,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

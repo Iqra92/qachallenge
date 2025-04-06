@@ -10,6 +10,7 @@ import base.core.drivers.DriverProvider;
 import base.core.library.Constants;
 import base.core.library.PropertyLoader;
 
+
 public class Hooks {
 
     /**
@@ -44,12 +45,14 @@ public class Hooks {
      * even when the step result is failed, undefined, pending, or skipped.
      */
     @After
-    public static void afterTest() {
-        DriverManager.removeDriver();
+    public void afterTest() {
+
     }
 
     @AfterAll
     public static void tearDown() {
-
+        if (DriverManager.getDriver() != null) {
+            DriverManager.getDriver().quit();
+        }
     }
 }

@@ -3,6 +3,11 @@ package base.core.pages;
 import base.core.pages.common.BasePage;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import static base.core.library.Constants.Errors.*;
 
 
 public class CreateAccountPage extends BasePage {
@@ -38,8 +43,8 @@ public class CreateAccountPage extends BasePage {
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.hostelworld.qacodechallenge:id/Invalid email\")")
     private WebElement emailError;
 
-    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.hostelworld.qacodechallenge:id/Invalid password\")")
-    private WebElement passwordError;
+    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.hostelworld.qacodechallenge:id/passwordEt\")")
+    private WebElement errorMessagePassword;
 
     public boolean isCreateAccountPageDisplayed() {
 
@@ -72,31 +77,54 @@ public class CreateAccountPage extends BasePage {
     public void clickCreateAccount() {
         reusableUIMethods.clickElement(createAccountButton);
     }
-    public void createAccount(String firstName, String lastName, String email, String password) {
-        enterFirstName(firstName);
-        enterLastName(lastName);
-        enterEmail(email);
-        enterPassword(password);
-        clickCreateAccountButton();
+
+    public void clickPasswordAccount() {
+        reusableUIMethods.clickElement(passwordField);
     }
 
-    // Verification: If we reach the login page, the registration was successful.
+
     public boolean isRedirectedToLoginScreen() {
         return reusableUIMethods.isElementDisplayed(loginButton);
     }
 
-    // Verification: If an error message appears, registration failed.
     public boolean isErrorMessageDisplayed() {
         return reusableUIMethods.isElementDisplayed(errorMessage);
     }
 
-    public String getFirstNameErrorText() { return firstNameError.getText(); }
-    public String getLastNameErrorText() { return lastNameError.getText(); }
-    public String getEmailErrorText() { return emailError.getText(); }
-    public String getPasswordErrorText() { return passwordError.getText(); }
+    public boolean isInvalidFirstNameMessageDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(firstNameField));
+        String pageSource = driver.getPageSource();
+        return pageSource.contains(INVALID_FIRST_NAME);
+    }
 
-    public String getEmailErrorMessage() {
-        return emailError.getText();
+    public boolean isInvalidAccountPasswordMessageDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(errorMessagePassword));
+        String pageSource = driver.getPageSource();
+        return pageSource.contains(INVALID_PASSWORD);
+    }
+
+    public boolean isInvalidLastNameMessageDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(lastNameField));
+        String pageSource = driver.getPageSource();
+        return pageSource.contains(INVALID_LAST_NAME);
+    }
+
+    public boolean isInvalidAcountEmailMessageDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(emailField));
+        String pageSource = driver.getPageSource();
+        return pageSource.contains(INVALID_EMAIL);
+    }
+
+
+    public boolean isInvalidDuplicateUserMessageDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(emailField));
+        String pageSource = driver.getPageSource();
+        return pageSource.contains(USER_ALREADY_EXISTS);
     }
 
     public boolean isRegistrationSuccessful() {

@@ -15,11 +15,11 @@ public class MainSteps {
         this.createAccount = createAccount;
     }
 
-
     @Given("the user is on the main screen")
     public void the_user_is_on_the_main_screen() {
         assertTrue(loginPage.isLoginPageDisplayed());
         assertTrue(createAccount.isCreateAccountPageDisplayed());
+        System.out.println("User is on the Main Page");
     }
 
-}
+} 

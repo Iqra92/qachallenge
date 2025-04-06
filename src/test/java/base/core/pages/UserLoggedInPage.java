@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class UserLoggedInPage extends BasePage {
 
-    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.hostelworld.qacodechallenge:id/userLoggedInMessage\")")
+    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.hostelworld.qacodechallenge:id/greetingTv\")")
     private WebElement userLoggedInMessage;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.hostelworld.qacodechallenge:id/firstNameTv\")")
