@@ -7,9 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "base.steps.android.login",
+        glue = {"base.steps.android.login","base.hooks"},
         plugin = {
-                "pretty",
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json",
                 "junit:target/cucumber-reports/cucumber.xml",
@@ -17,7 +16,8 @@ import org.junit.runner.RunWith;
 
         },
         monochrome = true,
-        tags = "@regression"
+        tags = "@positive",
+        publish = true
 )
 public class RunCucumberTest {
 }
